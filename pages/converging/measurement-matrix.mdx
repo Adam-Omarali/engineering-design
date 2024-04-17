@@ -1,0 +1,30 @@
+### Overview
+A measurement matrix helps frame how good each solution is quantitatively, which leads to converging on designs which perform better. 
+
+### The Process
+
+1. List all solutions you’re considering in one column
+2. List all the requirements (and metric units) in one row
+3. Fill in each corresponding row and column entry with how the given solution performs on the given metric
+
+### My Experience
+My Praxis II team utilized a measurement matrix informed by a mix of analysis, product specifications, proxy tests and similarity comparisons to help inform a Pugh chart. 
+
+import DisplayImg from '../../components/displayimg'
+import mm from "../../public/mm.png";
+
+<div style={{display: 'flex', gap: "5px"}}>
+    <DisplayImg src={mm} alt="Figure 1: Our measurement matrix highlighting key observations and how it helped inform detailed design decisions."/>
+</div>
+
+The measurement matrix was useful because **it forced us to converge by making detailed design choices**. We had to identify what water jets would be used to determine the jet's radius for its ability to operate at different water levels (Figure 1, Requirement B4). Selecting smaller components like motors was also necessary to determine energy efficiency, sound level and operating temperature (Figure 1, Requirement C2, B3, B1.1). For this reason, I suggest using a measurement matrix as soon as you have a list of ideas you want to pursue.
+
+Another benefit is measurement matrices show how good or bad a solution performs on a requirement. When we noticed our hydraulic press could damage a ferry much more than other solutions (Figure 1 - A3.1), we started to think of ways to make the press safer. This led to forming a requirement for the number of components that needed to fail for unsafe stress to be exerted (Figure 1 - A3.2). We proceeded to research safety components to add to the design.
+
+Not only does the matrix *frame* how much better one solution is better than another at a given requirement, but it also *converges* on the detailed design. I enjoy tools like these because the process of filling the matrix out guides the diverging and converging process. I found myself overwhelmed multiple times during Praxis II by the complexity of our project and all the arguments we were trying to piece together. Utilizing this tool simplifies the process of filling out a single box, which makes it clear which arguments have to be made. For example, how are we certain that the Hydraulic Press will not add any extra force to the ferry’s docking process (A1)? From here, analysis can be conducted and prototypes developed to communicate these ideas.
+
+### Checklist
+import Checkbox from '../../components/checkbox'
+
+<Checkbox text={"Do you have justification and evidence for each number in each box?"}/>
+<Checkbox text={"Ideally back up numbers with different methods of verification (use a mathematical model and reference designs to ensure you’re mathematical model seems reasonable)"}/>

@@ -1,0 +1,28 @@
+### Overview
+Pairwise Comparison is a tool that uses structured discussion to determine if one design is better than another.
+
+### The Process
+1. List all you're potential solutions in one row and one column
+2. Mark each cell that shares the same column solution and row solution with a ‘/’
+3. For a given cell, assign 1-2 people to champion the row design, another 1-2 to champion the column design, and an individual to take notes. Discuss which design you believe to be better for ~5 minutes.
+4. After discussion, conclude if one design is better than another by placing a 1 in the cell if the row solution is better and a 0 if the column solution is better
+5. Sum the number of 1s in each row.
+
+### My Use
+
+Our Praxis I team utilized pairwise comparison to converge to our final design and rank our potential solutions. We decided to systematically compare our designs by going through all requirements and identifying which solution performed better. This merges the discussion style of a pairwise comparison with the process of a Pugh chart.
+
+import DisplayImg from '../../components/displayimg'
+import pairwise from "../../public/pairwise.png";
+
+<div style={{display: 'flex', gap: "5px"}}>
+    <DisplayImg src={pairwise} alt="Figure 1: One recorded discussion around ease of device use for two designs, an autoclosing trash bin and a manually controlled compressor."/>
+</div>
+
+**I enjoyed using the Pairwise Comparison process because it forces the team to play devil’s advocate.** If there’s a design you’re leaning towards, pairwise comparison ensures you have done all due diligence necessary to recommend a design. In Figure 1, there is a disagreement between people being willing to find another bin if one auto-closes when filled. In this case, a stronger argument needed to be made around people being annoyed to find another trash bin (Hu Di’s comments in red). This produced a clear next step (in bold text) of designing a test or finding research to see if people would just place trash on top of a closed bin or find a new one. **I found most pairwise comparison arguments result in one or two *specific* claims that if verified, would produce a clear winner**. This is extremely useful for outlining clear next steps in the engineering design process. Highlighted in yellow at the top of Figure 1 are tests that resulted from the entire pairwise comparison process.
+### Checklist
+
+import Checkbox from '../../components/checkbox'
+
+<Checkbox text={"When championing against a design, consider it if would fail and how would it fail? What aspects seem too good to be true? Which parts are unreasonable? What is the hardest thing to believe about the design? What assumptions were made?"}/>
+<Checkbox text={"If you can’t decide which design is better than the other, list what information needs to be gathered to decide between designs. Start thinking about how you may get that information."}/>

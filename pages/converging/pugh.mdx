@@ -1,0 +1,32 @@
+### Overview
+A Pugh chart is a systematic process of comparing designs that frame potentially new ideas and set up claims for converging decisions. Pugh charts can be used early in the converging process to reveal a combination of ideas or eliminate bad approaches to solve the problem. They are also useful for arriving at a recommended design.
+
+### The Process
+1. List all designs in one column
+2. List all requirements in one row
+3. Select one design as a reference design and place 0’s across the row
+4. For the remaining designs, compare their performance on each metric to the reference design. If it is better, place a ‘+’ in the cell. If it is worse, place a ‘-’. If it is on par, place a ‘0’.
+5. Don’t sum up the pluses and minuses. This purely provides framing, any converging must be justified with a claim and evidence from the Pugh chart and/or external sources.
+
+### My Experience
+
+My Praxis II team utilized a Pugh Chart to go from 4 to 3 designs before our Beta presentation. Using a Pugh chart before creating a measurement matrix is still useful for the potential to discard designs that are overall worse or combine ideas, which was our goal.
+
+import DisplayImg from '../../components/displayimg'
+import pugh from "../../public/pugh.png";
+
+<div style={{display: 'flex', gap: "5px"}}>
+    <DisplayImg src={pugh} alt="Figure 1: Our Pugh chart where the opposite strengths and weakness against requirements are highlighted."/>
+</div>
+
+Based on experience from Praxis I, it seems like combining the Hole and Pinball or Hydraulic Press is a good idea. This turns out not to be the case because the requirements that differ between the two designs only consider the minimum or maximum value. For example, we had a requirement related to the maximum stress exerted on the ferry by the solution. By combining solutions, the maximum stress remains the same (the max of (solution 1, solution 2)).
+
+Ultimately, we could not make an engineering argument to discontinue one design based on the Pugh chart. Although the tool did not achieve its initial purpose, it provided evidence and justification that proxy testing was the clear next step in picking a design. As mentioned with measurement matrices, since these projects are overly complex, I like using tools which make the next steps clearer. **Utilizing a pugh chart early in the converging process helps reduce complexity by eliminating designs (not in our case), or making the next steps clear (our case)**.
+
+### Checklist
+import Checkbox from '../../components/checkbox'
+
+<Checkbox text={"Can any designs be eliminated?"}/>
+<Checkbox text={"Can any concepts be combined?"}/>
+<Checkbox text={"Is there a clear next best reference for the Pugh chart?"}/>
+<Checkbox text={"What more information do you need to justify one design is better than another?"}/>

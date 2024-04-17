@@ -1,0 +1,46 @@
+### Overview
+The requirements model allows you to identify the form of an ideal solution to a given opportunity. By creating a list of requirements, called a requirement string, solutions can be compared against each other systematically. 
+
+### The Process
+I utilized the requirements model extensively in Praxis II to reduce the build-up of ice in the Ward's Island ferry dock. Requirements are comprised of 6 components, described through an example from Praxis II:
+
+1. High-Level Objective: What abstract category does this requirement fall under? For example, the ability of a solution to aid the ferry's docking process.
+2. Objective: What does this requirement specifically set out to accomplish? For example, The effectiveness of ice clearance in the docking area.
+3. Metric: How is the objective measured? This includes a characteristic and a unit. For example, the area of ice remaining in the docking area (characteristic) after 30 minutes for allotted operation (qualifier), measured in m² (unit). 
+4. Constraint: What is the minimum or maximum value of the metric that still allows the solution to capture the opportunity? For example, the solution must be able to remove 1.46m² of ice. 
+5. Criteria: Is a higher or lower value for the metric better? In some cases, this can be complex based on utility curves. For example, clearing more ice is always better.
+6. Stakeholder: Who is impacted by this requirement? Who cares about it? For example, the island residents and ferry operators are impacted by this requirement.
+
+### My Experience
+This tool was most useful to frame what our solutions would look like during the diverging process, a naturally ambiguous task.
+
+import DisplayImg from '../../components/displayimg'
+import v1 from "../../public/v1.png";
+import v2 from "../../public/v2.png"
+import v3 from "../../public/v3.png"
+import v4 from "../../public/v4.png"
+
+<div style={{display: 'flex', gap: "5px"}}>
+    <DisplayImg src={v1} alt="Figure 1: Our initial metric for ice clearance was overly focused on time."/>
+    <DisplayImg src={v2} alt="Figure 2: Our second metric limited the solution to removing or preventing ice."/>
+</div>
+
+Our initial metric (Figure 1) was time-based since the opportunity revolved around stakeholders being affected by ferry delays. We learned that time-based metrics were hard to measure, which would defeat the whole intention of comparing solutions against requirements.
+
+Our second metric (Figure 2) restricted the design space by focusing on the entire docking area. **This was due to a lack of communication between the stakeholders**. It is only after our in-person site visit did we understand the ferry discontinuation occurs when ice piles up in the narrow end of the docking area. As a result, ideas like heating the dock were eliminated since it was unreasonable to heat the entire dock area.
+
+I learned talking to the stakeholders who are affected by the requirement allows you to ensure you're model of reality is closer to those who experience the opportunity. As an individual with little experience of ferry docking in icy conditions, my mind made up visualizations which were farther than reality. For example, imagine ice surrounding the ferry in all directions and holding it in place. In reality, the ferry can use its propellers to push ice around the hull, so only the ice in front matters.
+
+<div style={{display: 'flex', gap: "5px"}}>
+    <DisplayImg src={v3} alt="Figure 3: Our third metric focused solely on the maximum dimension of ice rather than the quantity of ice."/>
+    <DisplayImg src={v4} alt="Figure 4: Our final metric accurately measures the quantity of ice through the area."/>
+</div>
+
+Forming requirements is not an individual task, but rather a group discussion. As we framed the problem better and better, our team kept coming back to our requirements to make necessary adjustments. 
+We agreed that the layering up of ice was most important and that our metric should reflect how much ice had filled the docking area.
+This resulted in us changing from the metric in Figure 3 to Figure 4. In addition, our final metric was easy to measure come time for proxy testing.
+
+### Checklist
+import Checkbox from '../../components/checkbox'
+
+<Checkbox text={"I clarified my understanding that informs each requirement with the community. One useful technique is “steel manning”, which means restating to the stakeholder what your understanding of their situation is."}/>

@@ -1,0 +1,31 @@
+### Overview
+Root Cause Analysis is a systematic tool to frame the causes of a problem/opportunity. By constantly asking why \<insert problem> is occurring, the causes rather than symptoms of a problem are identified. If the root cause is solved, all problems listed in the why tree should be solved.
+
+### The Process
+1. List the overarching problem/opportunity you are trying to capture.
+2. Ask why is this problem occurring? List all answers as a branch stemming from the initial problem.
+3. Continue to ask why for each branch until you have reached a fundamental cause.
+
+### My Use
+My Praxis II team utilized Root Cause Analysis during the RFP to help frame the opportunity.
+
+import DisplayImg from '../../components/displayimg'
+import rca from "../../public/rca-2.png";
+
+<div style={{display: 'flex', gap: "5px"}}>
+    <DisplayImg src={rca} alt="Figure 1: Our root cause analysis with the process of asking why (blue) along with key observations (black)."/>
+</div>
+
+This root cause analysis helps avoid solutions such as a faster ferry. At its root, longer commute times are not affected by the ferry’s speed but by its ability to move through ice. This tool was useful for framing potential solution areas, allowing for converging to a single cause to restrict the design scope. Interestingly, our group chose to focus on the fact the ice builds up in the dock, but not at the root level. **I learned framing your opportunity at a specific branch in the tree is related to the size of the design space**. All branches below the node you select make up potential solutions. 
+
+A deeper analysis could have been performed on the age of the ferry and ice damaging the structure. These causes are likely interconnected by the specific parts of the ferry, their design, and their tendency to wear and tear. This highlights some improper use because all branches should be mutually exclusive (not overlap).
+
+I have used root cause for multiple years because it aligns with values of truth and honesty. I believe we often convince ourselves of problems for solutions we design. Root cause analysis ensures you are truthfully tackling a real problem, rather than getting caught up in tech that treats a symptom. For example, innovative design of a ship hull to reduce drag and speed up the operation. 
+
+### Checklist
+
+import Checkbox from '../../components/checkbox'
+
+<Checkbox text={"Is your root cause a fundamental truth? For example, the dock being U-shaped is a fundamental truth about its design. Asking why further would lead to historical answers rather than a cause that is currently addressable."}/>
+<Checkbox text={"Are your branches mutually exclusive?"}/>
+<Checkbox text={"Did you pick a node to frame your opportunity which allows for a suitable design space? Is the design space too strict or open?"}/>

@@ -1,0 +1,28 @@
+### Overview
+Listing all the possible ways to solve a given problem helps you explore the entire design space. It gives teams a variety of concepts to continue more specific diverging. 
+
+### The Process
+There is no specific process to follow but working together as a team to form the list is more effective than individual ideation.
+
+### My Experience
+My Praxis I team used this method to help expand our design space when we felt stuck after using previous diverging tools. Our team was largely biased by reference designs and focused on garbage compaction to solve trash overflow. As a result, none of us could naturally generate unique ideas to address the problem.
+
+**Listing all the possible ways to solve the problem provided a systematic method of finding diverse solution ideas.**
+
+import DisplayImg from '../../components/displayimg'
+import all from "../../public/all.png";
+
+<div style={{display: 'flex', gap: "5px"}}>
+    <DisplayImg src={all} alt="Figure 1: All possible ways to solve trash overflow with main approaches highlighted in red and sub approaches in yellow"/>
+</div>
+
+As seen in Figure 1 highlighted in red, our team identified 4 mutually exclusive approaches to solve trash overflow. From these four approaches, we further identified ways to achieve them. For example, two ways you can have less trash is to produce less trash in the first place or you can make trash smaller. This is a recursive process where you can now ask what are all the possible approaches to produce less trash. 
+
+**I enjoy this approach because it gives confidence that the team has considered the entire design space.** This is important come time to pick a solution because you’re not left wondering if there is something better out there. This tool is another example of taking a complex design space and simplifying it by recognizing sub-design spaces. **As the sub-spaces get more and more granular, solutions begin to present themselves more clearly.** For example, identifying the problem of storing more trash led to an approach of maximizing the available volume. Supported by previous framing, one solution was to make the bin sizes adjustable for different garbage types.
+
+### Checklist
+import Checkbox from '../../components/checkbox'
+
+<Checkbox text={"Are all the solution methods you listed mutually exclusive?"}/>
+<Checkbox text={"As you break down each approach and find sub approaches, list any ideas that come to your mind"}/>
+<Checkbox text={"If necessary, use a generative AI tool like ChatGPT that is non-biased with previous reference designs. A prompt can be as simple as “List all the possible ways to solve <your problem>”"}/>

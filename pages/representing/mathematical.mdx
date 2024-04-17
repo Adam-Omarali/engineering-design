@@ -1,0 +1,26 @@
+### Overview
+Mathematical prototypes represent a concept’s ability to accomplish a task or meet a requirement by using relative equations from sciences like physics. 
+
+### Process
+1. List all the interactions between your concept and the environment
+2. Use relevant equations to quantify these interactions by identifying all fixed variables and solving for the remaining free variables
+
+### My Experience
+My Praxis II team utilized mathematical prototypes to see the force needed by a hydraulic to push a plate down and submerge buoyant ice.
+
+import DisplayImg from '../../components/displayimg'
+import math from "../../public/math.png";
+
+<div style={{display: 'flex', gap: "5px"}}>
+    <DisplayImg src={math} alt="Figure 1: Initial calculations for our hydraulic plate modelled as a beam. Relevant errors and their consequences have been annotated."/>
+</div>
+
+Our initial calculation failed to account for rotation caused by the ice on the end of the rod (45kN). As a result, the force needed for the hydraulic was underestimated. **The challenge with this calculation is the result seems large enough to be reasonable so the result was never checked.** This mistake was only caught after being reviewed by Professor Carrick. As an engineering student, I am biased to believe theoretical calculations as fact, but the consequences for being inaccurate are severe. For real-world engineering challenges, there is no answer at the end of a textbook, and therefore systems must be put in place to prevent errors. Being humble and admitting you may be wrong is challenging, but is important to uphold my values of intellectual honesty.
+
+### Checklist
+
+import Checkbox from '../../components/checkbox'
+
+<Checkbox text={"Walkthrough you’re calculations with the entire team. Have everybody check it over and that it's reasonable"}/>
+<Checkbox text={"Ask at least 1 external authority to review the calculation (someone with more domain experience in the area)"}/>
+<Checkbox text={"Perform a test or use simulation software to verify the result. Tests can be scaled down. For example, use a reasonable 10N force at one end of a beam and measure the for force needed for equilibrium on the other end. Proxy tests can be used for more than just requirements!"}/>

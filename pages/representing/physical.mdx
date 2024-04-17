@@ -1,0 +1,33 @@
+### Overview
+Physical Prototypes utilize real objects to represent an idea. Ideas often communicated include performance against tests, design edge cases, unbelievable aspects, and verification of analysis-based prototypes like mathematical calculations.
+
+### The Process
+There is no set process for designing prototypes, but they are always best designed with some purpose in mind.
+
+### My Experience
+My MakeUofT team utilized electronic and mechanical parts to prototype a device that automatically locks and unlocks a door from someone's phone.
+
+import DisplayImg from '../../components/displayimg'
+import Vid from '../../components/video'
+import ee from "../../public/board.png";
+import gear from "../../public/gear.png";
+
+<div style={{display: 'flex', gap: "5px"}}>
+    <Vid src={""} alt="Figure / Video 1: A demonstration of our device with human assistance for non-prototyped parts like a mount for the device."/>
+    <DisplayImg src={ee} alt="Figure 2: A messy electrical board holding together all the necessary components"/>
+    <DisplayImg src={gear} alt="Figure 3: A 3D-Printed gear and movable component"/>
+</div>
+
+The main purpose was to help others visualize our idea and demonstrate the capability of executing the idea. **I found the best way to communicate a solution and convince people of its ability to capture an opportunity is to build the most crucial features, also known as the minimum viable product.** In our project, this involved sending a signal from something outside a room to move an object that can open a door. We could have spent time designing an authentication system on the phone, soldering wires to a protoboard (Figure 2), constructing a structure to hold the motor and gear (Figure 3), and much more. In the end, we were able to use our prototype to complete the task from start to finish (with human help for less important non-prototype components. This is visible in Figure/Video 1.
+
+For us, Bluetooth was important to get working since our opportunity was related to getting locked out of a room. For this specific scenario, controlling the door from outside was the essential solution. We successfully demonstrated Bluetooth as a viable software solution to the problem.
+
+However, spinning a motor or sending a signal over Bluetooth are believable challenges. The most unbelievable aspect of the prototype is its ability to open a door. Demonstrating the device supplies enough force as the door handle begins changing direction would have helped the audience accept our physical design as a viable solution to the problem. 
+
+**I learned that solutions can be broken down into several key components that have multiple approaches. Prototyping the most unbelievable part is a practice that should be applied to each component to demonstrate you’re chosen approaches are effective.**
+
+### Checklist
+import Checkbox from '../../components/checkbox'
+
+<Checkbox text={"Are you prototyping the most unbelievable part? If not, what is the purpose of you’re prototype?"}/>
+<Checkbox text={"Before constructing the prototype, keep removing parts until you're left with the bare minimum needed to fulfill the prototype’s purpose"}/>
