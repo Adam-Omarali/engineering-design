@@ -20,15 +20,12 @@ const config: DocsThemeConfig = {
   nextThemes: {
     defaultTheme: "light",
   },
-  head: () => {
-    return (
-      <>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta property="og:title" content={"Engineering Handbook"} />
-        <meta property="og:description" content={"An engineering handbook"} />
-      </>
-    );
-  },
+  head: (
+    <>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Adam's Engineering Handbook</title>
+    </>
+  ),
 };
 
 export default config;
