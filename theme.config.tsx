@@ -17,6 +17,9 @@ const config: DocsThemeConfig = {
   search: {
     placeholder: "Seach Handbook",
   },
+  nextThemes: {
+    defaultTheme: "light",
+  },
 };
 
 export default config;
